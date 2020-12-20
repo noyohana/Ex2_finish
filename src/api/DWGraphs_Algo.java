@@ -64,7 +64,7 @@ public class DWGraphs_Algo implements dw_graph_algorithms {
      * @param oldG the graph to be copied
      * @return DWGraph object with equals elements as g
      */
-    public DWGraph_DS caster(directed_weighted_graph oldG){
+    public DWGraph_DS copy2(directed_weighted_graph oldG){
         DWGraph_DS newGr = new DWGraph_DS();
         Collection<node_data> nodes = oldG.getV();                     
         for(node_data node : nodes){                                   
