@@ -26,7 +26,7 @@ public class Player {
         occuped = new HashSet<>();
         permitted= new HashMap<>();
         _graphAlgo = new DWGraphs_Algo(new DWGraph_DS());
-        DWGraph_DS temp = _graphAlgo.caster(_graph);
+        DWGraph_DS temp = _graphAlgo.copy2(_graph);
         _graphAlgo.init(temp);
         for(int i = 0; i < numOfAgents; i++){
         	permitted.put(i,new HashSet<String>());
